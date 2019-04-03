@@ -1,12 +1,15 @@
 """
-@name rendu_monnaie.py
+@name caisse_enregistreuse.py
 @author Aélion
 @version 0.0.1
-A poor coins counter
+A poor coins counter 2
 """
-somme = 464
-billet100 = somme    // 100
-reste100  = somme    %  100
+sommeAttendue = 957
+sommePayee = 1000
+sommeRendue = sommePayee - sommeAttendue
+
+billet100 = sommeRendue    // 100
+reste100  = sommeRendue    %  100
 billet50  = reste100 // 50
 reste50   = reste100 %  50
 billet20  = reste50  // 20
@@ -17,7 +20,6 @@ billet5   = reste10  // 5
 reste5    = reste10  %  5
 piece2    = reste5   // 2
 piece1    = reste5   %  2
-
 
 listeBillet = [billet100, billet50, billet20, billet10, billet5]
 listeChaineB = ["","","","",""]
@@ -45,11 +47,11 @@ for i in range(2):
         listeChaineP[i] = str(listePiece[i]) + " pièces de " + str(listeMontantP[i])
 
 
-print("Veuillez retirer : ")
+print("Nous vous rendons : ")
 for i in range(5):
     if listeChaineB[i] != "":
         print(listeChaineB[i])
 for i in range(2):
     if listeChaineP[i] != "":
         print(listeChaineP[i])
-
+print("Merci de votre visite")
