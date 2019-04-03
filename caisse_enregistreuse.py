@@ -8,6 +8,9 @@ sommeAttendue = 957
 sommePayee = 1000
 sommeRendue = sommePayee - sommeAttendue
 
+if sommeRendue < 0:
+    print("L'approvisionnement n'est pas suffisant.")
+
 billet100 = sommeRendue    // 100
 reste100  = sommeRendue    %  100
 billet50  = reste100 // 50
@@ -54,4 +57,4 @@ for i in range(5):
 for i in range(2):
     if listeChaineP[i] != "":
         print(listeChaineP[i])
-print("Merci de votre visite")
+print("Merci de votre visite.")
