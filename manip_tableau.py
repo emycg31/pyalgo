@@ -88,23 +88,23 @@ COMPARE FUNCTION
 @return greater or lower value of two depends howTo params
 """
 
-def compare(firstVal, secondVal, howTo):
+def compare1(firstVal, secondVal, howTo):
     if (howTo == "L"):
         return getLowerOf(firstVal, secondVal)
     
     return getGreaterOf(firstVal, secondVal)    
 
-resultatc = compare(4,9,"L")  
+resultatc = compare1(4,9,"L")  
 print(resultatc)
 
-def compare(firstVal, secondVal, desc=True):
+def compare2(firstVal, secondVal, desc=True):
     if (desc):
         return getLowerOf(firstVal, secondVal)
     
     return getGreaterOf(firstVal, secondVal)    
 
-resultatp = compare(4,9,)  
-resultatg = compare(4,9,False)  
+resultatp = compare2(4,9,)  
+resultatg = compare2(4,9,False)  
 print(resultatp)
 print(resultatg)
 
