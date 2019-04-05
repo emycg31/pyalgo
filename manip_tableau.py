@@ -118,7 +118,7 @@ min function
 def min(anArray):
     theMin = anArray[0]
     for value in anArray[1:]:
-        theMin = compare(theMin, value)
+        theMin = compare2(theMin, value)
 
     return theMin
 
@@ -131,7 +131,7 @@ max function
 def max(anArray):
     theMax = anArray[0]
     for value in anArray[1:]:
-        theMax = compare(theMax, value, False)
+        theMax = compare2(theMax, value, False)
 
     return theMax
 
