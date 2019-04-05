@@ -39,13 +39,13 @@ letter = tableauPrinc[0][indiceL]
 ponct = tableauPrinc[1][indiceP]
 number = tableauPrinc[2][indiceN]
 
-print("Letter :", letter, "Ponct :", ponct, "Number :", number)
+#print("Letter :", letter, "Ponct :", ponct, "Number :", number)
 
 # Déterminer les caractères restants
 if len(passwordtr) < nbCaract-3:
     for i in range(nbCaract-3):
         whichType = random.randint(0,3)
-        print("Choix du tableau :", whichType)
+        #print("Choix du tableau :", whichType)
         #print("Tableau choisi :", tableauPrinc[whichType])
         indice = random.randint(0,len(tableauPrinc[whichType])-1)
         #print("indice :", indice)
@@ -54,7 +54,7 @@ if len(passwordtr) < nbCaract-3:
         val = tableauPrinc[whichType][indice]        
         #print("valeur choisie :", tableauPrinc[whichType][indice])
         passwordtr = passwordtr + val
-print("Mot de passe tronqué :", passwordtr)
+#print("Mot de passe tronqué :", passwordtr)
 
 # Concaténation des caractères obligatoires et non obligatoires
 passwordint = passwordtr + letter + ponct + number
