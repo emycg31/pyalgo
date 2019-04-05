@@ -12,8 +12,9 @@ tabNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 tabMinletters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 tableauPrinc = [tabLetters, tabPonct, tabNumbers, tabMinletters]
 
+
 from random import *
-nbCaract = int(uniform(8,12))
+nbCaract = int(uniform(8,13))
 print("Nombre de caractère :", nbCaract)
 
 letter = str()
@@ -37,7 +38,7 @@ print("Letter :", letter, "Ponct :", ponct, "Number :", number)
 # Déterminer les caractères restants
 if len(passwordtr) < nbCaract-3:
     for i in range(nbCaract-3):
-        whichType = int(uniform(0,3))
+        whichType = int(uniform(0,4))
         print("Choix du tableau :", whichType)
         #print("Tableau choisi :", tableauPrinc[whichType])
         indice = int(uniform(0,len(tableauPrinc[whichType])))
